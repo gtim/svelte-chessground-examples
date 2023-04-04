@@ -8,7 +8,7 @@
 
 	let chessground;
 
-	let cfg = {
+	let config = {
 		movable: {
 			color: 'white',
 			free: false,
@@ -26,5 +26,5 @@
 </script>
 
 <div style="width:512px;height:512px;">
-	<Chessground bind:this={chessground} config={cfg}/>
+	<Chessground bind:this={chessground} {config}/>
 </div>
