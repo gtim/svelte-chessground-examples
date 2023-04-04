@@ -4,6 +4,9 @@
 	import {onMount} from 'svelte';
 	import {toDests,playOtherSide} from '$lib/util.js';
 
+	import {title} from '$lib/stores.js';
+	title.set('Only legal moves');
+
 	const chess = new Chess();
 
 	let chessground;

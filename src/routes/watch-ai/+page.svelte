@@ -8,6 +8,9 @@
 	import {onMount} from 'svelte';
 	import {toDests,playOtherSide} from '$lib/util.js';
 
+	import {title} from '$lib/stores.js';
+	title.set('Watch random AIs play');
+
 	const chess = new Chess();
 
 	let chessground;
@@ -32,6 +35,6 @@
 
 </script>
 
-<div style="width:512px;height:512px;">
+<div style="width:100%;aspect-ratio:1">
 	<Chessground bind:this={chessground} {config}/>
 </div>

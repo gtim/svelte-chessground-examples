@@ -1,8 +1,12 @@
 <script>
+
 	import {Chessground} from 'svelte-chessground';
 	import {Chess} from 'chess.js';
 	import {onMount} from 'svelte';
 	import {toDests,playOtherSide} from '$lib/util.js';
+
+	import {title} from '$lib/stores.js';
+	title.set('Play vs. random AI');
 
 	const chess = new Chess();
 
