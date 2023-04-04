@@ -32,7 +32,7 @@ div.example {
 	flex-basis:0;
 	flex-grow:999;
 	min-inline-size:300px;
-	padding:16px;
+	padding:16px 0 16px 16px;
 }
 div.example > div {
 	max-width:512px;
