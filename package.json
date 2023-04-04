@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"chess.js": "^1.0.0-beta.4"
+		"chess.js": "^1.0.0-beta.4",
+		"svelte-chessground": "^0.0.2"
 	}
 }
