@@ -6,8 +6,10 @@ const dev = process.argv.includes('dev');
 const config = {
 	kit: {
 		adapter: adapter(),
+		
 		paths: {
-			base: dev ? '' : '/svelte-chessground-examples'
+			base: dev ? '' : '/svelte-chessground-examples',
+			relative: false,
 		}
 	}
 };
