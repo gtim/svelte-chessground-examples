@@ -25,20 +25,23 @@
 
 	function makeRandomMove( chessground, chess ) {
 		return (orig,dest) => {
-			chess.move({ from: orig, to: dest });
-			const moves = chess.moves({ verbose: true });
-			const move = moves[ Math.floor(Math.random() * moves.length) ];
-			chess.move( move.san );
-			chessground.move( move.from, move.to );
+			setTimeout(() => {
+				chess.move({ from: orig, to: dest });
+				const moves = chess.moves({ verbose: true });
+				const move = moves[ Math.floor(Math.random() * moves.length) ];
+				chess.move( move.san );
+				chessground.move( move.from, move.to );
 
-			const color = chess.turn() == 'w' ? 'white' : 'black';
-			chessground.set({
-				turnColor: color,
-				movable: {
-					color: color,
-					dests: toDests(chess)
-				}
-			});
+				const color = chess.turn() == 'w' ? 'white' : 'black';
+				chessground.set({
+					turnColor: color,
+					movable: {
+						color: color,
+						dests: toDests(chess)
+					}
+				});
+				chessground.playPremove();
+			}, 750 );
 		};
 	}
 
