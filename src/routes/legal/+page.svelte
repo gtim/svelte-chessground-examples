@@ -11,7 +11,7 @@
 	let cfg = {
 		movable: {
 			color: 'white',
-			free: 'false',
+			free: false,
 			dests: toDests(chess),
 		}
 	};

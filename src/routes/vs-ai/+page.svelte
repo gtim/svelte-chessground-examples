@@ -11,7 +11,7 @@
 	let cfg = {
 		movable: {
 			color: 'white',
-			free: 'false',
+			free: false,
 			dests: toDests(chess),
 		}
 	};
@@ -25,21 +25,7 @@
 
 	function makeRandomMove( chessground, chess ) {
 		return (orig,dest) => {
-			try {
-				chess.move({ from: orig, to: dest });
-			} catch(e) {
-				// invalid move
-				const color = chess.turn() == 'w' ? 'white' : 'black';
-				chessground.set({
-					fen: chess.fen(),
-					turnColor: color,
-					movable: {
-						color: color,
-						dests: toDests(chess)
-					}
-				});
-				return;
-			}
+			chess.move({ from: orig, to: dest });
 			const moves = chess.moves({ verbose: true });
 			const move = moves[ Math.floor(Math.random() * moves.length) ];
 			chess.move( move.san );
