@@ -1,7 +1,8 @@
 <script>
 	import {Chessground} from 'svelte-chessground';
-	import {Chess,SQUARES} from 'chess.js';
+	import {Chess} from 'chess.js';
 	import {onMount} from 'svelte';
+	import {toDests,playOtherSide} from '$lib/util.js';
 
 	const chess = new Chess();
 
@@ -12,42 +13,16 @@
 			color: 'white',
 			free: 'false',
 			dests: toDests(chess),
-			//events: { after: playOtherSide }
 		}
 	};
 
 	
 	onMount(async () => {
 		chessground.set( {
-			movable: { events: { after: playOtherSide } }
+			movable: { events: { after: playOtherSide( chessground, chess ) } }
 		});
 	});
 
-	function toDests(chess) {
-		const dests = new Map();
-		SQUARES.forEach(s => {
-			const ms = chess.moves({square: s, verbose: true});
-			if (ms.length) dests.set(s, ms.map(m => m.to));
-		});
-		return dests;
-	}
-
-	function playOtherSide(orig,dest) {
-		try {
-			chess.move({ from: orig, to: dest });
-		} catch(e) {
-			// invalid move
-			chessground.set({ fen: chess.fen() });
-		}
-		const color = chess.turn() == 'w' ? 'white' : 'black';
-		chessground.set({
-			turnColor: color,
-			movable: {
-				color: color,
-				dests: toDests(chess)
-			}
-		});
-	}
 </script>
 
 <div style="width:512px;height:512px;">
