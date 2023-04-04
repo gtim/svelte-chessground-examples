@@ -5,7 +5,7 @@
 <li><a href="/fen">Custom FEN on flipped board</a></li>
 <li><a href="/legal">Play legal moves</a></li>
 <li><a href="/vs-ai">Play vs random AI</a></li>
-<li>Watch random AIs play</li>
+<li><a href="/watch-ai">Watch random AIs play</a></li>
 </ul>
 
 <slot/>
