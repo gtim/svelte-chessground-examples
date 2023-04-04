@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import {title} from '$lib/stores.js';
+	import { base } from '$app/paths';
 </script>
 
 
@@ -8,11 +9,11 @@
 <div class="container">
 	<div class="sidebar">
 		<ul>
-			<li><a href="/">Default configuration</a></li>
-			<li><a href="/fen">Custom FEN</a></li>
-			<li><a href="/legal">Only legal moves</a></li>
-			<li><a href="/vs-ai">Play vs. random AI</a></li>
-			<li><a href="/watch-ai">Watch random AIs play</a></li>
+			<li><a href="{base}/">Default configuration</a></li>
+			<li><a href="{base}/fen">Custom FEN</a></li>
+			<li><a href="{base}/legal">Only legal moves</a></li>
+			<li><a href="{base}/vs-ai">Play vs. random AI</a></li>
+			<li><a href="{base}/watch-ai">Watch random AIs play</a></li>
 		</ul>
 	</div>
 	<div class="example">
