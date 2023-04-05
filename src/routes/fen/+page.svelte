@@ -10,7 +10,5 @@
 	};
 </script>
 
-<div style="width:100%;aspect-ratio:1;">
-	<Chessground {config}/>
-</div>
+<Chessground {config}/>
 

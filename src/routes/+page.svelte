@@ -5,6 +5,4 @@
 	title.set('Default configuration');
 </script>
 
-<div style="width:100%;aspect-ratio:1;">
-	<Chessground />
-</div>
+<Chessground />

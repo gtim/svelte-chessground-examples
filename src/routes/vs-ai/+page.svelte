@@ -51,6 +51,4 @@
 
 </script>
 
-<div style="width:100%;aspect-ratio:1;">
-	<Chessground bind:this={chessground} {config}/>
-</div>
+<Chessground bind:this={chessground} {config}/>
