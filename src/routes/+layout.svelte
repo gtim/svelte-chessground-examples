@@ -11,6 +11,7 @@
 		<ul>
 			<li><a href="{base}/">Default configuration</a></li>
 			<li><a href="{base}/fen">Custom FEN</a></li>
+			<li><a href="{base}/reactive">Reactive position</a></li>
 			<li><a href="{base}/legal">Only legal moves</a></li>
 			<li><a href="{base}/vs-ai">Play vs. random AI</a></li>
 			<li><a href="{base}/watch-ai">Watch random AIs play</a></li>
