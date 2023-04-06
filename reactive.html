@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="/svelte-chessground-examples/_app/immutable/assets/_layout.1cd62ea7.css" rel="stylesheet">
+		<link href="/svelte-chessground-examples/_app/immutable/assets/_page.d42b99ae.css" rel="stylesheet">
 		<link href="/svelte-chessground-examples/_app/immutable/assets/Chessground.d07181f7.css" rel="stylesheet">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/start.29a0b705.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/index.dbf4ef36.js">
@@ -17,21 +18,25 @@
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/stores.7efcc2a9.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/fen-page.svelte.8aaed6b3.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/reactive-page.svelte.e5e4e784.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/Chessground.ae9893b6.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<h1>svelte-chessground example: <span style="display:inline-block;"></span></h1>
+<h1>svelte-chessground example: <span style="display:inline-block;">Only legal moves</span></h1>
 <div class="container"><div class="sidebar"><ul><li><a href="/svelte-chessground-examples/">Default configuration</a></li>
 			<li><a href="/svelte-chessground-examples/fen">Custom FEN</a></li>
 			<li><a href="/svelte-chessground-examples/reactive">Reactive position</a></li>
 			<li><a href="/svelte-chessground-examples/legal">Only legal moves</a></li>
 			<li><a href="/svelte-chessground-examples/vs-ai">Play vs. random AI</a></li>
 			<li><a href="/svelte-chessground-examples/watch-ai">Watch random AIs play</a></li></ul></div>
-	<div class="example"><div><div class="scg_container svelte-15so71n"></div></div></div></div>
+	<div class="example"><div><div class="scg_container svelte-15so71n"></div>
+
+<div class="svelte-93q6qo"><button class="svelte-93q6qo">Flip board</button>
+	<button class="svelte-93q6qo">Next position</button>
+</div></div></div></div>
 
 
 			
@@ -51,7 +56,7 @@
 						import("/svelte-chessground-examples/_app/immutable/entry/app.02d34bb7.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_1tuiuc4.element, {
-							node_ids: [0, 3],
+							node_ids: [0, 5],
 							data,
 							form: null,
 							error: null
