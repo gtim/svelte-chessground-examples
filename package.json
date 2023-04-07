@@ -1,6 +1,6 @@
 {
 	"name": "svelte-chessground-examples",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -21,6 +21,6 @@
 	"type": "module",
 	"dependencies": {
 		"chess.js": "^1.0.0-beta.4",
-		"svelte-chessground": "^0.0.5"
+		"svelte-chessground": "^0.1.0"
 	}
 }

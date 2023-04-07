@@ -15,6 +15,7 @@
 			<li><a href="{base}/legal">Only legal moves</a></li>
 			<li><a href="{base}/vs-ai">Play vs. random AI</a></li>
 			<li><a href="{base}/watch-ai">Watch random AIs play</a></li>
+			<li><a href="{base}/style">Custom styles</a></li>
 		</ul>
 	</div>
 	<div class="example">
