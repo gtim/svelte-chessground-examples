@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="/svelte-chessground-examples/_app/immutable/assets/_layout.1cd62ea7.css" rel="stylesheet">
+		<link href="/svelte-chessground-examples/_app/immutable/assets/_page.2376c68c.css" rel="stylesheet">
 		<link href="/svelte-chessground-examples/_app/immutable/assets/ChessgroundUnstyled.ea00d5c0.css" rel="stylesheet">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/start.3c19a785.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/index.dbf4ef36.js">
@@ -17,15 +18,14 @@
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/stores.7efcc2a9.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/watch-ai-page.svelte.8bf3b326.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/style-page.svelte.1466baa9.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/ChessgroundUnstyled.svelte_svelte_type_style_lang.7f7c6f3f.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/chess.ea872f19.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<h1>svelte-chessground example: <span style="display:inline-block;">Play vs. random AI</span></h1>
+<h1>svelte-chessground example: <span style="display:inline-block;">Reactive position</span></h1>
 <div class="container"><div class="sidebar"><ul><li><a href="/svelte-chessground-examples/">Default configuration</a></li>
 			<li><a href="/svelte-chessground-examples/fen">Custom FEN</a></li>
 			<li><a href="/svelte-chessground-examples/reactive">Reactive position</a></li>
@@ -33,7 +33,10 @@
 			<li><a href="/svelte-chessground-examples/vs-ai">Play vs. random AI</a></li>
 			<li><a href="/svelte-chessground-examples/watch-ai">Watch random AIs play</a></li>
 			<li><a href="/svelte-chessground-examples/style">Custom styles</a></li></ul></div>
-	<div class="example"><div><div class="cg-wrap cg-default-style svelte-nbdzop"></div></div></div></div>
+	<div class="example"><div><div class="override_background svelte-xhrhwf"><div class="cg-wrap cg-default-style svelte-nbdzop"></div></div>
+
+<div style="text-align:center;"><button class="svelte-xhrhwf">Change style</button>
+</div></div></div></div>
 
 
 			
@@ -53,7 +56,7 @@
 						import("/svelte-chessground-examples/_app/immutable/entry/app.9abf6ffb.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_2ni0aj.element, {
-							node_ids: [0, 8],
+							node_ids: [0, 6],
 							data,
 							form: null,
 							error: null

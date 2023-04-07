@@ -6,19 +6,19 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="/svelte-chessground-examples/_app/immutable/assets/_layout.1cd62ea7.css" rel="stylesheet">
-		<link href="/svelte-chessground-examples/_app/immutable/assets/Chessground.d07181f7.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/start.29a0b705.js">
+		<link href="/svelte-chessground-examples/_app/immutable/assets/ChessgroundUnstyled.ea00d5c0.css" rel="stylesheet">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/start.3c19a785.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/index.dbf4ef36.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/singletons.d53601b4.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/singletons.6613047a.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/index.796cff32.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/paths.7237c20c.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/app.02d34bb7.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/_layout.svelte.c85950ee.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/paths.7eb7b619.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/app.9abf6ffb.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/_layout.svelte.b85813f3.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/stores.7efcc2a9.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/legal-page.svelte.153e75c5.js">
-		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/Chessground.ae9893b6.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/entry/legal-page.svelte.a239ec2f.js">
+		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/ChessgroundUnstyled.svelte_svelte_type_style_lang.7f7c6f3f.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/chess.ea872f19.js">
 		<link rel="modulepreload" href="/svelte-chessground-examples/_app/immutable/chunks/util.f07d8c1e.js">
 	</head>
@@ -32,14 +32,15 @@
 			<li><a href="/svelte-chessground-examples/reactive">Reactive position</a></li>
 			<li><a href="/svelte-chessground-examples/legal">Only legal moves</a></li>
 			<li><a href="/svelte-chessground-examples/vs-ai">Play vs. random AI</a></li>
-			<li><a href="/svelte-chessground-examples/watch-ai">Watch random AIs play</a></li></ul></div>
-	<div class="example"><div><div class="scg_container svelte-15so71n"></div></div></div></div>
+			<li><a href="/svelte-chessground-examples/watch-ai">Watch random AIs play</a></li>
+			<li><a href="/svelte-chessground-examples/style">Custom styles</a></li></ul></div>
+	<div class="example"><div><div class="cg-wrap cg-default-style svelte-nbdzop"></div></div></div></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_1tuiuc4 = {
+					__sveltekit_2ni0aj = {
 						env: {},
 						assets: "/svelte-chessground-examples",
 						base: "/svelte-chessground-examples",
@@ -49,10 +50,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("/svelte-chessground-examples/_app/immutable/entry/start.29a0b705.js"),
-						import("/svelte-chessground-examples/_app/immutable/entry/app.02d34bb7.js")
+						import("/svelte-chessground-examples/_app/immutable/entry/start.3c19a785.js"),
+						import("/svelte-chessground-examples/_app/immutable/entry/app.9abf6ffb.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1tuiuc4.element, {
+						kit.start(app, __sveltekit_2ni0aj.element, {
 							node_ids: [0, 4],
 							data,
 							form: null,
