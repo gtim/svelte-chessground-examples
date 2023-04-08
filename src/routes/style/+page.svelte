@@ -14,12 +14,12 @@
 
 {#if style_i == 0}
 	<div class="override_background">
-		<Chessground />
+		<Chessground coordinates={false} />
 	</div>
 {:else if style_i == 1}
 	<Chessground className="cg-paper" coordinates={false}/>
 {:else if style_i == 2}
-	<Chessground />
+	<Chessground coordinates={false} />
 {/if}
 
 <div style="text-align:center;">
