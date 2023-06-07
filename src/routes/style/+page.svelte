@@ -27,8 +27,8 @@
 </div>
 
 <style>
-	div.override_background :global(.cg-wrap cg-board) {
-		background-image:url("/blue-marble.jpg");
+	div.override_background :global(cg-board) {
+		background-image:url("/blue-marble.jpg") !important;
 	}
 		
 	button {
