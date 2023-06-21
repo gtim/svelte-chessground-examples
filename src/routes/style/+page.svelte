@@ -1,5 +1,5 @@
 <script>
-	import {Chessground} from 'svelte-chessground';
+	import {Chessground, ChessgroundUnstyled} from 'svelte-chessground';
 
 	import '$lib/style-paper.css';
 
@@ -17,7 +17,7 @@
 		<Chessground coordinates={false} />
 	</div>
 {:else if style_i == 1}
-	<Chessground className="cg-paper" coordinates={false}/>
+	<ChessgroundUnstyled className="cg-paper" coordinates={false}/>
 {:else if style_i == 2}
 	<Chessground coordinates={false} />
 {/if}
