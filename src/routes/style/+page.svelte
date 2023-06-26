@@ -17,7 +17,7 @@
 		<Chessground coordinates={false} />
 	</div>
 {:else if style_i == 1}
-	<ChessgroundUnstyled className="cg-paper" coordinates={false}/>
+	<ChessgroundUnstyled class="cg-paper" coordinates={false}/>
 {:else if style_i == 2}
 	<Chessground coordinates={false} />
 {/if}
